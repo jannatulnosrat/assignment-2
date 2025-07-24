@@ -21,9 +21,13 @@
 .text-gray{
     color: #000000;
 }
+/*dark-3*/
 .text-light-gray{
     color: #8987A1;
 }
+/*.bg-light{
+    background-image: .;
+}*/
 
 
 /*header styles*/
@@ -31,6 +35,7 @@
 /*navbar related style*/
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
 .nav-item{
     list-style: none;
@@ -40,6 +45,46 @@
 .nav-link{
     text-decoration: none;
     font-weight: 500;
+    padding-left: 20px;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/*banner related styles */
+.span{
+    color: #E95A08;
+    
+}
+.banner{
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    
+}
+.banner-content{
+    max-width:1140px ;
+    height: 461px;
+    padding-bottom: 20px;
+    margin: 20px 20px;
+    text-align: center;
+
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+    justify-content: space-around;
+    
+}
+/*section related styles*/
+.section-content{
+    text-align: center;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 1.25rem;
+    
+
 }
 
 
@@ -67,9 +112,10 @@
 
 
 
-
-
+/*responsive media query*/
 
 @media screen and (max-width:576px) {
-    
+    .navbar,.nav-links ,.banner{
+        flex-direction: column;
+    }
 }
